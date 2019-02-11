@@ -8,6 +8,11 @@
 	margin: 0 0 0 $size__site-sidebar;
 }
 
+.site-content {
+	display: flex;
+	justify-content: center;
+}
+
 .site-content .widget-area {
 	float: left;
 	overflow: hidden;
