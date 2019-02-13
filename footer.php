@@ -26,10 +26,11 @@
 					$rand_posts = get_posts( $args );
 					foreach ( $rand_posts as $post ) : 
 					setup_postdata( $post ); ?>
+
 					<div class="event-box">
-						
 						<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 					</div>
+					
 				<?php endforeach; 
 				wp_reset_postdata(); ?>
 			</ul>

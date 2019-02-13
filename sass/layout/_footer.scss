@@ -2,7 +2,17 @@
 
 
     &__main {
-        
+
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+
+            .event-box {
+                margin: 10px;
+            }
+        }
+
     }
 
     &__heading {
