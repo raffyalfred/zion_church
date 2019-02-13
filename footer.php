@@ -24,7 +24,7 @@
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'zion_church' ), 'zion_church', '<a href="http://underscores.me/">Underscores.me</a>' );
+				printf( esc_html__( 'Created By: %1$s by %2$s.', 'zion_church' ), 'KofeeLabs', '<a href="http://underscores.me/">Underscores.me</a>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
