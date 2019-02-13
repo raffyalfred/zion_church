@@ -1,9 +1,17 @@
 .site-header {
 
-    background-image: linear-gradient(to top, #031923,#031923,#031923cc,#61696c);
+    background: whitesmoke;
 
     &__hero {
 
     }
 
+}
+
+.custom-header-image {
+    img {
+        display: flex;
+        margin: 0 auto;
+        padding: 2rem;
+    }
 }
