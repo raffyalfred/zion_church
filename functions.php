@@ -34,6 +34,7 @@ if ( ! function_exists( 'zion_church_setup' ) ) :
 		 * provide it for us.
 		 */
 		add_theme_support( 'title-tag' );
+		add_theme_support( 'custom-header' );
 
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
