@@ -22,7 +22,7 @@
 			<ul>
 				<?php
 					global $post;
-					$args = array( 'posts_per_page' => 3, 'category' => 3, 'orderby' => 'date' );
+					$args = array( 'posts_per_page' => 3, 'category' => 3, 'order'=> 'DESC', 'orderby' => 'date' );
 					$rand_posts = get_posts( $args );
 					foreach ( $rand_posts as $post ) : 
 					setup_postdata( $post ); ?>
@@ -30,7 +30,7 @@
 					<div class="event-box">
 						<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 					</div>
-					
+
 				<?php endforeach; 
 				wp_reset_postdata(); ?>
 			</ul>
