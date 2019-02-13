@@ -29,11 +29,16 @@
 
 					<div class="event-box">
 						<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+						<?php the_post_thumbnail('thumbnail'); ?>
 					</div>
 
 				<?php endforeach; 
 				wp_reset_postdata(); ?>
 			</ul>
+
+			<div class="view-more">
+				<a href="#" class="myButton">View More</a>
+			</div>
 
 		<!-- end of footer-main -->
 		</div>
