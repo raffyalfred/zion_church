@@ -9,41 +9,46 @@ $center:            0 auto;
 
 
     &__main {
+        h2 {
+            text-align: center;
+        }
         ul {
             list-style: none;
         }
 
-        @media screen and (min-width: $break-medium) {
+        flex-direction: column;
+
+        @media screen and (min-width: $break-large) {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
         }
 
         .events {
 
-            @media screen and (min-width: $break-medium) {
-                display: flex;
-                margin-bottom: 2em;
-                flex-direction: column;
+            @media screen and (min-width: $break-large) {
+                width: 60%;
             }
 
             ul {
                 display: flex;
-                flex-wrap: wrap;
+                flex-direction: column;
                 padding: 0;
                 max-width: 100%;
                 margin: 0 auto;
                 justify-content: center;
+                align-items: center;
     
                 @media screen and (min-width: $break-smallish) {
-                    flex-direction: row;
                 }
 
                 @media screen and (min-width: $break-medium) {
-                    flex-wrap: nowrap;
+                    flex-direction: row;
+                    align-items: unset;
                 }
     
                 @media screen and (min-width: $break-large) {
-                    align-items: flex-start;
                 }
     
                 .event-box {
@@ -62,7 +67,7 @@ $center:            0 auto;
                     }
                     @media screen and (min-width: $break-large) {
                         width: 400px;
-                        height: 370px;
+                        height: auto;
                     }
                     
                     .event-box-excerpt {
@@ -84,20 +89,39 @@ $center:            0 auto;
     
             }
 
-            .heading {
 
-                text-align: center;
-        
-            }
         }
 
         .google-location {
             display: flex;
             justify-content: center;
 
+            @media screen and (max-width: $break-smallish) {
+                
+                flex-direction: column;
+                align-items: center;
+
+                .quick-links {
+                    columns: 2;
+                    margin: 0;
+                    padding: 0;
+                }
+
+            }
+
+            @media screen and (max-width: $break-large) {
+                margin-top: 4em;
+            }
+
+            @media screen and (min-width: $break-large) {
+                flex-direction: column;;
+            }
+
             @media screen and (min-width: $break-xl) {
                 justify-content: 0;
             }
+
+
 
         }
 
