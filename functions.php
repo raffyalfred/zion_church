@@ -142,6 +142,7 @@ function zion_church_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'zion_church_scripts' );
 
+
 /**
  * Implement the Custom Header feature.
  */
