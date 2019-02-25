@@ -101,12 +101,6 @@ $center:            0 auto;
                 flex-direction: column;
                 align-items: center;
 
-                .quick-links {
-                    columns: 2;
-                    margin: 0;
-                    padding: 0;
-                }
-
             }
 
             @media screen and (max-width: $break-large) {
@@ -119,6 +113,15 @@ $center:            0 auto;
 
             @media screen and (min-width: $break-xl) {
                 justify-content: 0;
+            }
+
+            .quick-links {
+                
+                @media screen and (max-width: $break-smallish) {
+                    
+                    display: flex;
+                }
+
             }
 
 
