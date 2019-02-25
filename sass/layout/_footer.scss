@@ -115,14 +115,31 @@ $center:            0 auto;
                 justify-content: 0;
             }
 
-            .quick-links {
-                
+            .footer-links {
+
                 @media screen and (max-width: $break-smallish) {
-                    
-                    display: flex;
+                    align-self: end;
+                    width: 100%;
                 }
 
+
+                .footer-menu {
+
+                    .footer__items {
+                        margin: 0;
+                        padding: 0;
+                        text-align: center;
+
+                        li {
+                            margin-top: 0.5rem;
+                        }
+                    }
+
+                }
             }
+
+
+
 
 
 

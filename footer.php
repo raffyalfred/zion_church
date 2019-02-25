@@ -46,18 +46,15 @@
 			<div class="google-location">
 
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1674.4556870445806!2d-113.52915141001647!3d53.59278462666885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a023879369234b%3A0xd14e5a965f2e3e4d!2sZion+Baptist+Church+of+Kensington!5e0!3m2!1sen!2sca!4v1550160586150" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-				<div class="footer-menu">
+				<div class="footer-links">
 					<h2>Quick Links</h2>
 
-					<div class="quick-links">
-
-						<?php
-						wp_nav_menu( array(
-							'theme_location' => 'menu-1',
-							'menu_id'        => 'primary-menu',
-						) );
-						?>
-						
+					<div class="footer-menu">
+						<?php wp_nav_menu( array( 
+							'theme_location' => 'secondary',
+							'menu_class'	 => 'footer__items',
+							'menu_id'        => 'footer-items'  
+						) ); ?>
 					</div>
 					
 				</div>
