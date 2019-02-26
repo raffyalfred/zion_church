@@ -29,7 +29,7 @@
 						setup_postdata( $post ); ?>
 	
 						<div class="event-box">
-							<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+							<li><h4><?php the_title(); ?></h4></li>
 							<?php the_post_thumbnail('thumbnail'); ?>
 							<span class="event-box-excerpt"><?php the_excerpt(); ?></span>
 							<a class="read-more" href="<?php echo get_permalink(); ?>"> Read More...</a>
