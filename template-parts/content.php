@@ -10,23 +10,33 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
 
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				zion_church_posted_on();
-				zion_church_posted_by();
+	<header class="entry-header postHeading">
+		
+		<div class="postHeading__title">
+			
+			<?php
+
+			if ( is_singular() ) :
+				the_title( '<h1 class="entry-title">', '</h1>' );
+			else :
+				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			endif;
+
+			if ( 'post' === get_post_type() ) :
 				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
+				<div class="entry-meta postHeading__postedBy">
+					<?php
+					zion_church_posted_on();
+					//TURNED OFF: posted by to hide. Uncomment to display back on
+					// zion_church_posted_by();
+					?>
+				</div><!-- .entry-meta -->
+
+			<?php endif; ?>
+
+		</div>
+
 	</header><!-- .entry-header -->
 
 	<?php zion_church_post_thumbnail(); ?>
