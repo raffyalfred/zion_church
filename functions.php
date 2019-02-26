@@ -130,6 +130,14 @@ add_action( 'widgets_init', 'zion_church_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
+//enqueues our external font awesome stylesheet
+function enqueue_our_required_stylesheets(){
+	wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css'); 
+}
+add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
+
+
+
 function zion_church_scripts() {
 	wp_enqueue_style( 'zion_church-style', get_stylesheet_uri() );
 

@@ -15,10 +15,32 @@ $center:            0 auto;
 
 }
 
-.custom-header-image {
-    img {
-        display: flex;
-        margin: 0 auto;
-        padding: 2rem;
+
+.custom-header {
+
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.247);
+
+    &__image {
+        img {
+            display: flex;
+            margin: 0 auto;
+            padding: 0.5rem;
+        }
     }
+
+}
+
+.navigation {
+    
+    display: flex;
+    align-items: center;
+
+    &__items {
+        position: absolute;
+    }
+
+    
+
 }
