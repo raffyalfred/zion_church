@@ -6,9 +6,14 @@ $break-xl:          1200px;
 $center:            0 auto;
 
 .footer {
-
+    
 
     &__main {
+        
+        background-color: #fff;
+        padding: 20px;
+    
+
         h2 {
             text-align: center;
         }
@@ -59,8 +64,7 @@ $center:            0 auto;
                     flex-direction: column;
                     align-items: center;                    
                     box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.09);
-                    background-color: white;
-                    height: 350px;
+                    background-color: #f6f6f6;
     
                     @media screen and (min-width: $break-smallish) {
                         height: auto;
@@ -105,6 +109,8 @@ $center:            0 auto;
 
             @media screen and (max-width: $break-large) {
                 margin-top: 4em;
+                display: flex;
+                justify-content: space-around;
             }
 
             @media screen and (min-width: $break-large) {
@@ -132,6 +138,15 @@ $center:            0 auto;
 
                         li {
                             margin-top: 0.5rem;
+                        }
+
+                        @media screen and (max-width: $break-large) {
+                            font-size: 1.4em;
+                        }
+
+                        @media screen and (min-width: $break-large) {
+                            display: flex;
+                            justify-content: space-around;
                         }
                     }
 
