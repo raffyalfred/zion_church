@@ -48,7 +48,7 @@
 			
 			<div id="site-navigation" class="navigation main-navigation">
 				<nav>
-					<button class="menu-toggle navigation__button" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars"></i><?php esc_html_e( '', 'zion_church' ); ?></button>
+					<button class="menu-toggle navigation__button" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars fa-3x"></i><?php esc_html_e( '', 'zion_church' ); ?></button>
 					<?php
 						wp_nav_menu( array(
 							'theme_location' => 'menu-1',
