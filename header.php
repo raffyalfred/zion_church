@@ -23,14 +23,14 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'zion_church' ); ?></a>
-
+	
 	<header id="masthead" class="site-header header">
-		<div class="site-branding header__hero">
+		<div class="site-branding header__nav">
+
 			<?php
+
 			the_custom_logo();
 			
-			
-
 			if ( is_front_page() && is_home() ) :
 				?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -59,12 +59,6 @@
 				</nav><!-- #site-navigation -->
 			</div>
 		</div><!-- .site-branding -->
-		<div class="custom-header">
-				<div class="custom-header__image">
-					<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
-				</div>
-		</div>
-		
 
 		<!-- <div class="custom-header">
 			<div class="custom-header__image">

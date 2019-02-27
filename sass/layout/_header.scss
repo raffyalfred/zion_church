@@ -7,12 +7,12 @@ $center:            0 auto;
 
 .header {
 
-    &__hero {
+    &__nav {
         display: flex;
         justify-content: space-between;
         padding: 0.5rem;
         height: 6.25rem;
-        background-color: rgba(14, 0, 143, 0.315);
+        background-color: rgba(22, 0, 221, 0.315);
     }
 
 }

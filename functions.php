@@ -73,7 +73,7 @@ if ( ! function_exists( 'zion_church_setup' ) ) :
 		
 		$args = array(
 			'flex-width'    => true,
-			'width'         => 980,
+			'width'         => 1920,
 			'flex-height'    => true,
 			'height'        => 200,
 			'default-image' => get_template_directory_uri() . '/images/header.jpg',
