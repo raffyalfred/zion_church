@@ -10,7 +10,9 @@ $center:            0 auto;
     &__hero {
         display: flex;
         justify-content: space-between;
-        padding: 0.5rem; 
+        padding: 0.5rem;
+        height: 6.25rem;
+        background-color: rgba(14, 0, 143, 0.315);
     }
 
 }
