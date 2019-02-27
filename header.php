@@ -16,6 +16,33 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+	<!-- <script text="css/javascript">
+		$( document ).ready(function() {
+
+$( ".cross" ).hide();
+$( ".navigation__items ul" ).hide();
+$( ".hamburger" ).click(function() {
+$( ".navigation__items ul" ).slideToggle( "slow", function() {
+$( ".hamburger" ).hide();
+$( ".cross" ).show();
+});
+});
+
+$( ".cross" ).click(function() {
+$( ".navigation__items ul" ).slideToggle( "slow", function() {
+$( ".cross" ).hide();
+$( ".hamburger" ).show();
+});
+});
+
+});
+	</script> -->
+
+
 
 	<?php wp_head(); ?>
 </head>
@@ -48,7 +75,10 @@
 			
 			<div id="site-navigation" class="navigation main-navigation">
 				<nav>
-					<button class="menu-toggle navigation__button" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars fa-3x"></i><?php esc_html_e( '', 'zion_church' ); ?></button>
+					<button class="menu-toggle navigation__button hamburger" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars fa-3x"></i><?php esc_html_e( '', 'zion_church' ); ?></button>
+					<button class="menu-toggle navigation__button cross" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-times fa-2x"></i><?php esc_html_e( '', 'zion_church' ); ?></button>
+
+					
 					<?php
 						wp_nav_menu( array(
 							'theme_location' => 'menu-1',

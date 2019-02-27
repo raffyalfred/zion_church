@@ -4,6 +4,10 @@ $break-medium:      768px;
 $break-large:       992px;
 $break-xl:          1200px;
 $center:            0 auto;
+$link-color: #d5ae3f;
+$ul-padding: 1rem;
+$ul-lineheight: 2;
+$li-hover-color: #fff;
 
 .header {
 
@@ -28,10 +32,31 @@ $center:            0 auto;
     display: flex;
     align-items: center;
 
+    a {
+        color: $link-color;
+        letter-spacing: 0.45rem;
+        text-transform: uppercase;
+    }
+
+    li:hover {
+        background-color: $li-hover-color;
+    }
+
+    ul {
+        padding: $ul-padding;
+        line-height: $ul-lineheight;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
     &__items {
         position: absolute;
         right: 10px;
         text-align: right;
+        background: rgba(255, 255, 255, 0.226);
+        margin-top: 0.5rem;
     }
 
     
