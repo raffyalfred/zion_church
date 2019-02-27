@@ -5,12 +5,12 @@ $break-large:       992px;
 $break-xl:          1200px;
 $center:            0 auto;
 
-.site-header {
-
-    background: whitesmoke;
+.header {
 
     &__hero {
-
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem; 
     }
 
 }
@@ -18,17 +18,6 @@ $center:            0 auto;
 
 .custom-header {
 
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.247);
-
-    &__image {
-        img {
-            display: flex;
-            margin: 0 auto;
-            padding: 0.5rem;
-        }
-    }
 
 }
 
