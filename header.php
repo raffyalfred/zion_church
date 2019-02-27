@@ -53,11 +53,9 @@ $( ".hamburger" ).show();
 	
 	<header id="masthead" class="site-header header">
 		<div class="site-branding header__nav">
-
-			<?php
-
-			the_custom_logo();
 			
+			<?php
+			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -72,13 +70,11 @@ $( ".hamburger" ).show();
 				?>
 				<p class="site-description"><?php echo $zion_church_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
-			
 			<div id="site-navigation" class="navigation main-navigation">
 				<nav>
-					<button class="menu-toggle navigation__button hamburger" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars fa-3x"></i><?php esc_html_e( '', 'zion_church' ); ?></button>
+					<button class="menu-toggle navigation__button hamburger" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars fa-2x"></i><?php esc_html_e( '', 'zion_church' ); ?></button>
 					<button class="menu-toggle navigation__button cross" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-times fa-2x"></i><?php esc_html_e( '', 'zion_church' ); ?></button>
 
-					
 					<?php
 						wp_nav_menu( array(
 							'theme_location' => 'menu-1',
@@ -88,6 +84,7 @@ $( ".hamburger" ).show();
 					?>
 				</nav><!-- #site-navigation -->
 			</div>
+
 		</div><!-- .site-branding -->
 
 		<!-- <div class="custom-header">
