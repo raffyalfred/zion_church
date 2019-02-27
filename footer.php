@@ -27,20 +27,16 @@
 						$rand_posts = get_posts( $args );
 						foreach ( $rand_posts as $post ) : 
 						setup_postdata( $post ); ?>
-	
 						<div class="event-box">
-							<li><h4><?php the_title(); ?></h4></li>
-							<?php the_post_thumbnail('thumbnail'); ?>
-							<span class="event-box-excerpt"><?php the_excerpt(); ?></span>
-							<a class="read-more" href="<?php echo get_permalink(); ?>"> Read More...</a>
+							<?php the_post_thumbnail('medium-large');?>
+							<li><h4><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4></li>
+							<span class="posts-readMore"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">Read More</a></span>
 						</div>
-	
+						
 					<?php endforeach; 
 					wp_reset_postdata(); ?>
 				</ul>
-				<div class="footer__view-more">
-					<a href="#" class="view-more-button">View More</a>
-				</div>
+
 			</div>
 			
 			<div class="google-location">
