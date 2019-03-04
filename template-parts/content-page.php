@@ -12,10 +12,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-
-		<?php wd_slider(1); ?>
-
-
+	
 		<!-- <div class="custom-header">
 			<div class="custom-header__image">
 			<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />

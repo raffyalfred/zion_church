@@ -52,8 +52,11 @@ $( ".hamburger" ).show();
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'zion_church' ); ?></a>
 	
 	<header id="masthead" class="site-header header">
+
+		
+
 		<div class="site-branding header__nav">
-			
+	
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
@@ -72,9 +75,6 @@ $( ".hamburger" ).show();
 			<?php endif; ?>
 			<div id="site-navigation" class="navigation main-navigation">
 				<nav>
-					<button class="menu-toggle navigation__button hamburger" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars fa-2x"></i><?php esc_html_e( '', 'zion_church' ); ?></button>
-					<button class="menu-toggle navigation__button cross" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-times fa-2x"></i><?php esc_html_e( '', 'zion_church' ); ?></button>
-
 					<?php
 						wp_nav_menu( array(
 							'theme_location' => 'menu-1',
@@ -84,8 +84,10 @@ $( ".hamburger" ).show();
 					?>
 				</nav><!-- #site-navigation -->
 			</div>
-
+			
 		</div><!-- .site-branding -->
+		
+		<?php do_action('apply_header_images'); ?>
 
 		<!-- <div class="custom-header">
 			<div class="custom-header__image">

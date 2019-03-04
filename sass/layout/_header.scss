@@ -7,13 +7,17 @@ $center:            0 auto;
 
 .header {
 
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-    top: 0;
-    left: 0;
+    // position: fixed;
+    // z-index: 100;
+    // width: 100%;
+    // top: 0;
+    // left: 0;
 
     &__nav {
+        position: absolute;
+        z-index: 100;
+        width: 100%;
+        background: rgba(0, 0, 255, 0.137);
         display: flex;
         justify-content: space-between;
     }
@@ -27,5 +31,9 @@ $center:            0 auto;
 }
 
 .navigation {
+
+    ul {
+       position: absolute;
+    }
 
 }
