@@ -53,7 +53,7 @@ $( ".hamburger" ).show();
 	
 	<header id="masthead" class="site-header header">
 
-		<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
+		<img class="header__custom" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
 
 		<?php // do_action('apply_header_images'); ?>
 		

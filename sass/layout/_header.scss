@@ -1,8 +1,5 @@
-$break-small:       375px;
-$break-smallish:    576px;
-$break-medium:      768px;
-$break-large:       992px;
-$break-xl:          1200px;
+$tablet: 600px;
+$customMobileHeader: 32vh;
 $center:            0 auto;
 
 .header {
@@ -20,6 +17,10 @@ $center:            0 auto;
         left: 0;
     }
 
+    &__custom {
+        height: $customMobileHeader;
+    }
+
 }
 
 
@@ -34,4 +35,13 @@ $center:            0 auto;
        position: absolute;
     }
 
+}
+
+@media screen and (min-width: $tablet) {
+    
+    .header {
+        &__custom {
+            height: auto;
+        }
+    }
 }
