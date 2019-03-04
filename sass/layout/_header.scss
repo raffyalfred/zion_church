@@ -7,11 +7,7 @@ $center:            0 auto;
 
 .header {
 
-    // position: fixed;
-    // z-index: 100;
-    // width: 100%;
-    // top: 0;
-    // left: 0;
+   position: relative;
 
     &__nav {
         position: absolute;
@@ -20,6 +16,8 @@ $center:            0 auto;
         background: rgba(0, 0, 255, 0.137);
         display: flex;
         justify-content: space-between;
+        top: 0;
+        left: 0;
     }
 
 }
