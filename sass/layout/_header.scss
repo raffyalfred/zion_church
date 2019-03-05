@@ -1,9 +1,22 @@
 $tablet: 600px;
+$desktop: 960px;
+$tabletQuoteWidth: 100%;
 $customMobileHeader: 32vh;
 $center:            0 auto;
+$desktopQuoteFont: 1.5rem;
+
+// none bem styles are html tags or plugin classes
 
 h1 {
     // display: none;
+}
+
+.widget_randombibleversewidget {
+        position: absolute;
+        color: rgba(255, 255, 255, 0.925);
+        text-align: center;
+        top: 18%;
+        padding: 0px 10px 0px 10px;
 }
 
 .header {
@@ -19,6 +32,7 @@ h1 {
         justify-content: space-between;
         top: 0;
         left: 0;
+        padding: 10px 20px 10px 20px;
     }
 
     &__custom {
@@ -28,8 +42,16 @@ h1 {
 }
 
 
-.custom-header {
+.ccontent {
 
+    .wp-block-cover {
+        margin: 0 0 0 0;
+    }
+
+    a:link {
+        color: none;
+        text-decoration: none;
+    }
 
 }
 
@@ -47,5 +69,18 @@ h1 {
         &__custom {
             height: auto;
         }
+    }
+
+    .widget_randombibleversewidget {
+        width: $tabletQuoteWidth;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+
+    .widget_randombibleversewidget {
+        top: 40%;
+        font-size: $desktopQuoteFont;
+        padding: 0px 150px 0px 150px;
     }
 }
