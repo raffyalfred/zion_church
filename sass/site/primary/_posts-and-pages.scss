@@ -1,3 +1,5 @@
+$contentbgcolor: #0c2e44;
+
 .sticky {
 	display: block;
 }
@@ -20,4 +22,14 @@
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.pagecustomwidth {
+	max-width: 1240px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.ccontent {
+	background-color: $contentbgcolor;
 }

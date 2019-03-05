@@ -1,6 +1,7 @@
 $tablet: 600px;
 $desktop: 960px;
 $tabletQuoteWidth: 100%;
+$bodycolor: #fff;
 $customMobileHeader: 32vh;
 $center:            0 auto;
 $desktopQuoteFont: 1.5rem;
@@ -46,6 +47,14 @@ h1 {
 
     .wp-block-cover {
         margin: 0 0 0 0;
+    }
+
+    p {
+        color: $bodycolor;
+    }
+
+    h2 {
+        color: $bodycolor;
     }
 
     a:link {

@@ -1,2 +1,7 @@
 $size__site-main: 100%;
 $size__site-sidebar: 25%;
+$sepratorcolor: rgb(219, 184, 120);
+
+.separator {
+    background-color: $sepratorcolor;
+}
