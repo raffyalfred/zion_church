@@ -52,12 +52,6 @@
 							'menu_id'        => 'footer-items'  
 						) ); ?>
 					</div>
-
-					<div class="footer-socialMedia">
-						<h4>hihi</h4>
-
-
-					</div>
 					
 				</div>
 			</div>
