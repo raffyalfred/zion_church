@@ -33,3 +33,41 @@ $contentbgcolor: #0c2e44;
 .ccontent {
 	background-color: $contentbgcolor;
 }
+
+
+/*--------------------------------------------------------------
+POSTS AND PAGES SCSS
+--------------------------------------------------------------*/
+$break-xs:      375px;
+$break-sm: 		576px;
+$break-med:     768px;
+$break-lg:      992px;
+$break-xl:      1200px;
+
+
+.postHeading {
+
+	&__container {
+		text-align: center;
+		margin: 3em 0em;
+	}
+
+	&__title {
+		font-size: 2em;
+		text-align: center;
+		margin: 0;
+	}
+
+
+}
+
+.single-post {
+
+	header#masthead {
+		display: none;
+	}
+	#randombibleversewidget-3 {
+		display: none;
+	}
+
+} 

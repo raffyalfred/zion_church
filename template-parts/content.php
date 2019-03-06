@@ -9,16 +9,35 @@
 
 ?>
 
+<div class="contentNavigation">
+	<div class="contentNavigation__container">
+		<div id="site-navigation" class="navigation main-navigation contentNavigation__navigation">
+			<nav>
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+						'menu_class'	 => 'navigation__items',
+					) );
+				?>
+			</nav><!-- #site-navigation -->
+		</div>
+	</div>
+</div>
+
+
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<header class="entry-header postHeading">
+
 		
-		<div class="postHeading__title">
+		<div class="postHeading__container">
 			
 			<?php
 
 			if ( is_singular() ) :
-				the_title( '<h1 class="entry-title">', '</h1>' );
+				the_title( '<h1 class="entry-title postHeading__title">', '</h1>' );
 			else :
 				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 			endif;
@@ -41,7 +60,7 @@
 
 	<?php zion_church_post_thumbnail(); ?>
 
-	<div class="entry-content">
+	<div class="entry-content contentPost">
 		<?php
 		the_content( sprintf(
 			wp_kses(
@@ -63,7 +82,4 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php zion_church_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
