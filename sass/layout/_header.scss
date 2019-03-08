@@ -2,7 +2,7 @@ $tablet: 600px;
 $desktop: 960px;
 $tabletQuoteWidth: 100%;
 $bodycolor: #fff;
-$customMobileHeader: 34vh;
+$customMobileHeader: 35vh;
 $center:            0 auto;
 $desktopQuoteFont: 1.5rem;
 
@@ -16,8 +16,13 @@ h1 {
         position: absolute;
         color: rgba(255, 255, 255, 0.925);
         text-align: center;
-        top: 14%;
+        top: 21%;
         padding: 0px 10px 0px 10px;
+        font-size: 0.75rem;
+}
+
+.widget-title {
+    display: none;
 }
 
 .header {
@@ -82,6 +87,7 @@ h1 {
 
     .widget_randombibleversewidget {
         width: $tabletQuoteWidth;
+        font-size: 1rem;
     }
 }
 
