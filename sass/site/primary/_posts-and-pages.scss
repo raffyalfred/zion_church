@@ -1,4 +1,7 @@
 $contentbgcolor: #0c2e44;
+$tablet: 600px;
+$desktop: 960px;
+$pagecustomwidth: 1240px;
 
 .sticky {
 	display: block;
@@ -25,7 +28,7 @@ $contentbgcolor: #0c2e44;
 }
 
 .pagecustomwidth {
-	max-width: 1240px;
+	max-width: $pagecustomwidth;
 	margin: 0 auto;
 	padding: 20px;
 }
@@ -33,6 +36,8 @@ $contentbgcolor: #0c2e44;
 .ccontent {
 	background-color: $contentbgcolor;
 }
+
+
 
 
 
@@ -72,3 +77,32 @@ $break-xl:      1200px;
 	}
 
 } 
+
+@media screen and (min-width: $tablet) {
+
+	/*--------------------------------------------------------------
+PROGRAMS PAGE
+--------------------------------------------------------------*/
+
+		.program-body-content {
+			display: flex;
+		}
+
+		.custom-figure-width {
+			width: 50%;
+		}
+
+		.custom-program-info {
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.custom-row-reverse {
+			flex-flow: row-reverse;
+		}
+
+
+}
+
