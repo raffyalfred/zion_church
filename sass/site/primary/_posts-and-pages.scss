@@ -76,6 +76,34 @@ $break-xl:      1200px;
 		display: none;
 	}
 
+}
+
+.post {
+	max-width: 960px;
+	margin: 0 auto;
+
+	.weeklyEventSection {
+
+		@media screen and (min-width: $break-lg) {
+			display: flex;
+
+		}
+
+		&__Heading {
+			
+		}
+
+		&__Image {
+
+			@media screen and (min-width: $break-lg) {
+				img {
+					height: 350px;
+					width: 1000px;
+				}
+			}
+		}
+	}
+
 } 
 
 @media screen and (min-width: $tablet) {
