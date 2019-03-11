@@ -82,59 +82,27 @@ $break-xl:      1200px;
 	max-width: 960px;
 	margin: 0 auto;
 
-	.contentPost {
+	.weeklyEventSection {
 
-		padding: 10px;
+		@media screen and (min-width: $break-lg) {
+			display: flex;
 
-		p {
-			font-size: 18px;
 		}
 
-		@media screen and (min-width: $break-med) {
-			p {
-				font-size: 20px;
-			}
+		&__Heading {
+			
 		}
 
-		.weeklyEvents__Section {
-			margin-top: 10%;
-			padding: 20px;
-			box-shadow: 0 0 10px 4px rgba(145, 144, 144, 0.4);
-			background-color: #fff;
-		}
+		&__Image {
 
-		
-		.weeklyEvents__Breakfast {
-			align-items: flex-start;
-			
-			@media screen and (min-width: $break-med) {
-				h2 {
-					font-size: 32px;
-				}
-				grid-template-columns: auto 56% !important;
-			}
-			
-			.wp-block-media-text__content {
-				align-items: flex-start;
-			}
-			
-			.wp-block-media-text__media img {
-				
-				width: 100%;
-				height: auto;
-	
-				@media screen and (min-width: $break-med) {
-					width: 500px;
+			@media screen and (min-width: $break-lg) {
+				img {
 					height: 350px;
+					width: 1000px;
 				}
 			}
-
 		}
-
-
 	}
-
-
 
 } 
 
