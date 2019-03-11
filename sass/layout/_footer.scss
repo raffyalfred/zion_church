@@ -36,7 +36,7 @@ $center:            0 auto;
         .events {
 
             @media screen and (min-width: $break-large) {
-                width: 100%;
+                max-width: 1000px;
             }
 
             ul {
@@ -122,21 +122,18 @@ $center:            0 auto;
             display: flex;
             justify-content: space-around;
             width: 100%;
+            margin-top: 3em;
 
             @media screen and (max-width: $break-smallish) {
-                
                 flex-direction: column;
                 align-items: center;
-
+                margin: 3em 0;
             }
 
-            @media screen and (max-width: $break-large) {
-                margin-top: 4em;
+            @media screen and (min-width: $break-large) {
                 display: flex;
-                justify-content: space-around;
-            }
-
-            @media screen and (min-width: $break-xl) {
+                justify-content: center;
+                width: 1000px;
             }
 
 
@@ -144,10 +141,19 @@ $center:            0 auto;
 
                 a {
                     color: black;
+                    margin: 5px;
+                }
+
+                a:hover {
+                    color: #c5c5c5;
                 }
 
                 h2, h3, h4 {
                     margin: 0;
+                }
+
+                @media screen and (min-width: $break-large) {
+                    margin: 0px 0px 0px 100px;
                 }
 
                 @media screen and (max-width: $break-smallish) {
@@ -183,9 +189,10 @@ $center:            0 auto;
                         }
 
                         @media screen and (min-width: $break-large) {
-                            font-size: 1rem;
+                            font-size: 1.2rem;
                             display: flex;
-                            justify-content: space-around;
+                            width: 100px;
+                            flex-wrap: wrap;
                         }
                     }
 

@@ -12,7 +12,7 @@ $break-xl:      1200px;
     }
 
     .wpfc-sermon-image-img {
-        background-size: 50%;
+        background-size: 80%;
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -34,12 +34,18 @@ $break-xl:      1200px;
         border-top: none;
     }
 
+    .wpfc-sermon-main a {
+        text-decoration: none;
+        font-style: italic;
+        color: #334c5a;
+    }
+
     article {
         max-width: 450px;
         margin: 0 auto;
         padding-bottom: 20px;
         padding-top: 20px;
-        background-color: white;
+        background-color: #334c5a;
 
         .wpfc-sermon-single-header {
             padding: 10px;
@@ -47,6 +53,7 @@ $break-xl:      1200px;
 
         .wpfc-sermon-single-title {
             text-align: left;
+            color: #fff;
         }
 
         .wpfc-sermon-single-image img {
@@ -62,14 +69,32 @@ $break-xl:      1200px;
             align-items: flex-start;
         }
 
+        .wpfc-sermon-title-text {
+            font-size: 2em;
+        }
+
+        .wpfc-sermon-title-text:hover {
+            color: #e0b377;
+        }
+
+        ..wpfc-sermon-meta-item.wpfc-sermon-meta-date {
+            font-size: 1em;
+        }
+
+        .wpfc-sermon-single-description {
+            margin-top: 24px;
+            color: white;
+        }
+
         .wpfc-sermon-single-meta-item {
             font-style: italic;
             margin-bottom: 10px;
+            color: #edecec;
         }
 
         .wpfc-sermon-single-meta-item a {
             text-decoration: none;
-            color: rgb(147, 147, 147);
+            color: #ffd391;
             font-weight: bold;
         }
 
@@ -77,15 +102,38 @@ $break-xl:      1200px;
             color: rgb(133, 133, 133);
         }
 
+        .wpfc-sermon-single-navigation {
+            grid-template-columns: 30% 30%;
+            justify-content: space-between;
+        }
+
+        .previous-sermon,
+        .next-sermon {
+            padding: 10px;
+            background-color: #4c6477;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            color: #e0b377;
+            font-weight: bold;
+        }
+
+        .previous-sermon:hover,
+        .next-sermon:hover {
+            background-color: #3c5a69;
+            transition: 0.2s;
+            box-shadow: 0 0 7px 3px #0c0c0c66;
+        }
+
     }
 
     @media screen and (min-width: $break-med) {
 
         article {
-            max-width: 650px;
+            max-width: 800px;
             margin: 50px auto;
             padding: 30px;
-            box-shadow: 0 0 6px 3px rgba(35, 35, 35, 0.2);
+            box-shadow: 0 0 9px 5px rgba(35, 35, 35, 0.52);
         }
     }
 
