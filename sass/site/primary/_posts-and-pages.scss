@@ -78,17 +78,27 @@ $break-xl:      1200px;
 
 }
 
+.post-thumbnail {
+	img {
+		height: auto;
+		margin: 0 auto;
+		display: block;
+
+		@media screen and (min-width: 1940px) {
+			max-width: 80%;
+			height: 800px;
+		}
+	}
+}
+
 .post {
-	max-width: 960px;
 	margin: 0 auto;
 
 	.contentPost {
 
 		padding: 10px;
-
-		p {
-			font-size: 18px;
-		}
+		max-width: 1200px;
+		margin: 0 auto;
 
 		@media screen and (min-width: $break-med) {
 			p {
@@ -96,39 +106,123 @@ $break-xl:      1200px;
 			}
 		}
 
+		.weeklyEvents__Container {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			width: 100%;
+			
+			h3 {
+				font-size: 28px;
+			}
+
+			h4 {
+				color: darksalmon;
+			}
+
+			@media screen and (min-width: $break-lg) {
+				flex-direction: row;
+				h3 {
+					font-size: 20px
+				}
+			}
+
+			.wp-block-column {
+				margin: 10px;
+				text-align: left;
+				background-color: #2e485c;
+
+				@media screen and (max-width: $break-lg) {
+					padding: 20px;
+				}
+
+				p {
+					font-size: 20px;
+				}
+
+				@media screen and (min-width: $break-lg) {
+					text-align: center;
+					p {
+						font-size: 16px;
+					}
+				}
+
+				h3 {
+					text-align: center;
+					color: #d49a59;
+					border-bottom: solid 5px #dfe9f8;
+
+					@media screen and (min-width: $break-lg) {
+						width: 70%;
+						margin: 0 auto;
+						padding-top: 20px;
+					}
+				}
+
+
+				.zion_event {
+					color: #f3da4d;
+				}
+			}
+
+		}
+
 		.weeklyEvents__Section {
-			margin-top: 10%;
+			margin-top: 5%;
 			padding: 20px;
 			box-shadow: 0 0 10px 4px rgba(145, 144, 144, 0.4);
 			background-color: #fff;
+			
+			ul {
+				font-size: 20px;
+			}
 		}
-
 		
 		.weeklyEvents__Breakfast {
-			align-items: flex-start;
+			background-color: #172a42;
+			color: whitesmoke;
+
+			
+			h2 {
+				border-bottom: 8px solid #dfe9f8;
+				color: #d49a59;
+				font-size: 32px;
+
+				@media screen and (min-width: $break-lg) {
+					width: 60%;
+				}
+			}
+
+			img {
+				width: 100%;
+				height: auto;
+	
+				@media screen and (min-width: $break-lg) {
+					width: 500px;
+					height: 350px;
+				}
+			}
+
 			
 			@media screen and (min-width: $break-med) {
 				h2 {
 					font-size: 32px;
 				}
-				grid-template-columns: auto 56% !important;
+				img {
+					box-shadow: 0px 8px 3px 0px #ab7334;
+				}
+				grid-template-columns: auto 45% !important;
 			}
 			
 			.wp-block-media-text__content {
 				align-items: flex-start;
 			}
 			
-			.wp-block-media-text__media img {
-				
-				width: 100%;
-				height: auto;
-	
-				@media screen and (min-width: $break-med) {
-					width: 500px;
-					height: 350px;
-				}
-			}
 
+		}
+
+		.weeklyEvents__Summer {
+			align-items: center;
 		}
 
 
