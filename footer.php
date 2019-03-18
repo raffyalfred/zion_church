@@ -19,18 +19,30 @@
 
 			<!-- hidden until medium breakpoint -->
 			<div class="events">
-				<h2 class="heading">Upcoming events</h2>
+			
+				<h2 class="heading">Church Activities</h2>
+
 				<ul>
 					<?php
 						global $post;
-						$args = array( 'posts_per_page' => 3, 'category' => 3, 'order'=> 'DESC', 'orderby' => 'date' );
+						$args = array( 'posts_per_page' => 4, 'category' => 3, 'order'=> 'DESC', 'orderby' => 'date' );
 						$rand_posts = get_posts( $args );
 						foreach ( $rand_posts as $post ) : 
 						setup_postdata( $post ); ?>
 						<div class="event-box">
-							<?php the_post_thumbnail('medium-large');?>
+							<?php 
+								if (has_post_thumbnail() ) {
+
+									the_post_thumbnail('medium-large');
+								} else { ?>
+									<img src="<?php bloginfo('template_directory');?>/images/default-image.jpg" alt="<?php the_title();?>"/>
+								<?php } 
+							?>
 							<li><h4><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4></li>
 							<span class="posts-readMore"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">Read More</a></span>
+
+							
+
 						</div>
 						
 					<?php endforeach; 
@@ -38,6 +50,12 @@
 				</ul>
 
 			</div>
+
+			<div class="view-more">
+				<a href="http://zion-a.web.dmitcapstone.ca/zion-church/community-notices/" class="button2">View More</a>
+			</div>
+
+
 			
 			<div class="google-location">
 

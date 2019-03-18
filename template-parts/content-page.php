@@ -25,6 +25,9 @@
 	<?php zion_church_post_thumbnail(); ?>
 
 	<div class="entry-content ccontent pagecustom">
+	<?php if( get_field('program_title') ): ?>
+    <h2><?php the_field('program_title'); ?></h2>
+<?php endif; ?>
 		<?php
 		the_content();
 
