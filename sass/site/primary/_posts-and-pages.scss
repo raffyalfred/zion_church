@@ -54,6 +54,7 @@ $break-xl:      1200px;
 	display: none;
 }
 
+
 .postHeading {
 
 	position: absolute;
@@ -78,7 +79,11 @@ $break-xl:      1200px;
 
 	&__container {
 		text-align: center;
-		margin: 3em 0em;
+		background-color: rgba(12, 46, 68, 0.6);
+		color: #f6f6f6;
+		padding: 30px;
+		max-width: 800px;
+		margin: 0 auto;	
 	}
 
 	&__title {
@@ -123,6 +128,7 @@ $break-xl:      1200px;
 		}
 	}
 }
+
 
 .post {
 	margin: 0 auto;
@@ -280,8 +286,21 @@ $break-xl:      1200px;
 	max-width: 1200px;
 }
 
+.nav-links {
+	display: flex;
+	justify-content: space-between;
+}
+
+.comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next {
+	width: none;
+}
+
+.comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous {
+	width: none;
+}
+
 .post-navigation .nav-previous, .post-navigation .nav-next {
-	margin: 3em 0;
+	margin: 3em 1em;
 
 	a {
 		background-color: #0c2e44;

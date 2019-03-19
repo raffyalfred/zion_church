@@ -33,6 +33,40 @@ $center:            0 auto;
             margin: 0 auto;
         }
 
+        // view more button
+        .view-more {
+            
+            a.button2{
+                 display:inline-block;
+                 padding:0.5em 3em;
+                 border:0.16em solid #756e6e;
+                 margin:0 0.3em 0.3em 0;
+                 box-sizing: border-box;
+                 text-decoration:none;
+                 text-transform:uppercase;
+                 font-family:'Roboto',sans-serif;
+                 font-weight:400;
+                 color:#2c2f32;
+                 text-align:center;
+                 transition: all 0.15s;
+                }
+                a.button2:hover{
+                 color:#DDDDDD;
+                 border-color:#DDDDDD;
+                }
+                a.button2:active{
+                 color:#BBBBBB;
+                 border-color:#BBBBBB;
+                }
+                @media all and (max-width:30em){
+                 a.button2{
+                    display:block;
+                    margin: 0.4em auto;
+                    }
+                }
+
+        }
+
         .events {
 
             @media screen and (min-width: $break-large) {

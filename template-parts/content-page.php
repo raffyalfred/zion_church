@@ -25,7 +25,6 @@
 	<?php zion_church_post_thumbnail(); ?>
 
 	<div class="entry-content ccontent pagecustom">
-	
 		<?php
 		the_content();
 
