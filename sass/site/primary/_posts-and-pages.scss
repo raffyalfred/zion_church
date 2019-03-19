@@ -54,25 +54,22 @@ $break-xl:      1200px;
 	display: none;
 }
 
+.type-post {
+	background-color: #0c2e44;
+}
+
 
 .postHeading {
 
-	position: absolute;
-	z-index: 999;
-	left: 50%;
-	top: 25%;
-	width: 80%;
-	transform: translate(-50%, -50%);
 	color: #eaeaea;
 	font-size: 1em;
 	transition: 0.2s;
 
 	@media screen and (min-width: $break-med) {
-		top: 35%;
+		
 	}
 
 	@media screen and (min-width: $break-lg) {
-		top: 50%;
 		font-size: 2em;
 	}
 	
@@ -219,7 +216,7 @@ $break-xl:      1200px;
 		}
 		
 		.weeklyEvents__Breakfast {
-			background-color: #0c2e44;
+			background-color: #232323;
 			color: whitesmoke;
 			-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 			-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -269,10 +266,6 @@ $break-xl:      1200px;
 
 
 	}
-
-
-	
-	
 	
 }
 
@@ -281,14 +274,16 @@ $break-xl:      1200px;
 // NAVIGATION LINKS AT BOTTOM OF POSTS PAGE
 
 .site-main .post-navigation {
-	margin: 0 auto;
 	overflow: hidden;
-	max-width: 1200px;
+	background-color: #0c2e44;
+	margin: 0;
 }
 
 .nav-links {
 	display: flex;
 	justify-content: space-between;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next {
@@ -303,17 +298,18 @@ $break-xl:      1200px;
 	margin: 3em 1em;
 
 	a {
-		background-color: #0c2e44;
-		color: #fcb900;
+		background-color: #586d7b;
+		color: #e1e1e1;
 		text-decoration: none;
 		padding: 15px;
 		border-radius: 5px;
 	}
 
 	a:hover {
-		background-color: #46586e;
+		background-color: #39576e;
 		border-bottom: solid 4px #c3c3c3;
 		color: #e1e1e1;
+		transition: 0.1s;
 	}
 }
 
