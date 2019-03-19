@@ -60,13 +60,18 @@ $break-xl:      1200px;
 
 
 .postHeading {
-
+	position: absolute;
+	z-index: 99;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 40%;
 	color: #eaeaea;
 	font-size: 1em;
 	transition: 0.2s;
 
-	@media screen and (min-width: $break-med) {
-		
+	@media screen and (max-width: $break-sm) {	
+		top: 20%;
+		width: 100%;
 	}
 
 	@media screen and (min-width: $break-lg) {
@@ -115,7 +120,7 @@ $break-xl:      1200px;
 	position: relative;
 
 	img {
-		height: auto;
+		height: 700px;
 		margin: 0 auto;
 		display: block;
 
@@ -132,13 +137,19 @@ $break-xl:      1200px;
 
 	.contentPost {
 
-		padding: 10px;
 		max-width: 1200px;
 		margin: 0 auto;
 
 		@media screen and (min-width: $break-med) {
 			p {
 				font-size: 20px;
+			}
+		}
+
+		.post-noImage {
+			@media screen and (max-width: $break-sm){			
+				height: 250px;
+				width: 100%;
 			}
 		}
 
@@ -264,6 +275,46 @@ $break-xl:      1200px;
 			align-items: center;
 		}
 
+		.wp-block-latest-posts.has-dates.community__post {
+
+			@media screen and (max-width: $break-med) {
+				display: block;
+				list-style: none;
+
+				li {
+				}
+			}
+
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			list-style: none;
+			margin: 0;
+			grid-column-gap: 20px;
+			padding: 20px;
+
+			li {
+				background-color: cornsilk;
+				margin: 20px 0;
+				font-size: 1.5em;
+				padding: 20px;
+				border-left: 8px groove #e99539;
+
+				.wp-block-latest-posts__post-date {
+					font-size: 20px;
+				}
+
+			}
+
+			a {
+				text-decoration: none;
+				color: #4b4b4b;
+			}
+			a:hover {
+				color: #fcb900;
+			}
+
+		}
+
 
 	}
 	
@@ -296,13 +347,15 @@ $break-xl:      1200px;
 
 .post-navigation .nav-previous, .post-navigation .nav-next {
 	margin: 3em 1em;
-
 	a {
 		background-color: #586d7b;
 		color: #e1e1e1;
 		text-decoration: none;
 		padding: 15px;
 		border-radius: 5px;
+		display: flex;
+		justify-content: center;
+
 	}
 
 	a:hover {
