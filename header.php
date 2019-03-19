@@ -76,19 +76,10 @@ $( ".hamburger" ).show();
 				?>
 				<p class="site-description"><?php echo $zion_church_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
-			<div id="site-navigation" class="navigation main-navigation">
-				<nav>
-					<?php
-						wp_nav_menu( array(
-							'theme_location' => 'menu-1',
-							'menu_id'        => 'primary-menu',
-							'menu_class'	 => 'navigation__items',
-						) );
-					?>
-				</nav><!-- #site-navigation -->
-			</div>
 			
 		</div><!-- .site-branding -->
+
+		
 		
 		<?php do_action('apply_header_images'); ?>
 
@@ -97,6 +88,15 @@ $( ".hamburger" ).show();
 			<img src="<?php // header_image(); ?>" height="<?php // echo get_custom_header()->height; ?>" width="<?php // echo get_custom_header()->width; ?>" alt="" />
 			</div>
 		</div> -->
+		<nav id="site-navigation" class="main-navigation">
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'test' ); ?></button>
+			<?php
+			wp_nav_menu( array(
+				'theme_location' => 'menu-1',
+				'menu_id'        => 'primary-menu',
+			) );
+			?>
+		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
