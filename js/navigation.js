@@ -24,6 +24,18 @@ $(document).ready(function() {
         });
     });
 
+
+    // NAVIGATION SCROLL EFFECT
+    var scroll_pos = 0;
+    $(document).scroll(function() {
+    	scroll_pos = $(this).scrollTop();
+    	if (scroll_pos > 210) {
+    		$("#mega-menu-wrap-menu-1").css('background-color', 'rgba(216, 216, 216, 0.75)');
+    	} else {
+    		$("#mega-menu-wrap-menu-1").css('background-color', 'rgba(255, 255, 255, 0)');
+    	}
+    });
+
 });
 
 
