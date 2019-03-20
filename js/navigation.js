@@ -29,10 +29,14 @@ $(document).ready(function() {
     var scroll_pos = 0;
     $(document).scroll(function() {
     	scroll_pos = $(this).scrollTop();
-    	if (scroll_pos > 210) {
-    		$("#mega-menu-wrap-menu-1").css('background-color', 'rgba(216, 216, 216, 0.75)');
+    	if (scroll_pos > 100) {
+    		$(".main-navigation").css('background-color', 'rgb(17, 17, 17)');
+    		$(".main-navigation").css('height', '50px');
+    		$(".main-navigation").css('padding', '20px');
     	} else {
-    		$("#mega-menu-wrap-menu-1").css('background-color', 'rgba(255, 255, 255, 0)');
+    		$(".main-navigation").css('background-color', 'rgba(255, 255, 255, 0)');
+    		$(".main-navigation").css('height', 'auto');
+    		$(".main-navigation").css('padding', '10px');
     	}
     });
 
