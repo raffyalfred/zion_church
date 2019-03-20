@@ -137,7 +137,19 @@ function enqueue_our_required_stylesheets(){
 }
 add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
 
-
+function create_post_type() {
+	register_post_type( 'community_notices',
+	  array(
+		'labels' => array(
+		  'name' => __( 'Community Notices' ),
+		  'singular_name' => __( 'Community Notice' )
+		),
+		'public' => true,
+		'has_archive' => true,
+	  )
+	);
+  }
+  add_action( 'init', 'create_post_type' );
 
 function zion_church_scripts() {
 	wp_enqueue_style( 'zion_church-style', get_stylesheet_uri() );
