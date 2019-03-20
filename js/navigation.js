@@ -30,7 +30,7 @@ $(document).ready(function() {
     $(document).scroll(function() {
     	scroll_pos = $(this).scrollTop();
     	if (scroll_pos > 100) {
-    		$(".main-navigation").css('background-color', 'rgb(17, 17, 17)');
+    		$(".main-navigation").css('background-color', 'rgb(25, 59, 93)');
     		$(".main-navigation").css('height', '50px');
     		$(".main-navigation").css('padding', '20px');
     	} else {
