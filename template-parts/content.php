@@ -62,6 +62,12 @@
 
 	<div class="entry-content contentPost">
 		<?php
+
+		if (has_post_thumbnail() ) {
+
+		} else { ?>
+			<img class="post-noImage" src="<?php bloginfo('template_directory');?>/images/default-image.jpg" alt="<?php the_title();?>"/>
+		<?php }
 		the_content( sprintf(
 			wp_kses(
 				/* translators: %s: Name of current post. Only visible to screen readers */
@@ -75,11 +81,14 @@
 			get_the_title()
 		) );
 
+		
 		wp_link_pages( array(
 			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'zion_church' ),
 			'after'  => '</div>',
 		) );
 		?>
+
+
 	</div><!-- .entry-content -->
 
 </article><!-- #post-<?php the_ID(); ?> -->

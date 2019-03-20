@@ -50,16 +50,20 @@ $( ".hamburger" ).show();
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'zion_church' ); ?></a>
-	
+	<nav id="site-navigation" class="main-navigation">
+			<?php
+			wp_nav_menu( array(
+				'theme_location' => 'menu-1',
+				'menu_id'        => 'primary-menu',
+			) );
+			?>
+		</nav><!-- #site-navigation -->
 	<header id="masthead" class="site-header header">
-
 		<img class="header__custom" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
 
 		<?php // do_action('apply_header_images'); ?>
 		
-
 		<div class="site-branding header__nav">
-	
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
@@ -76,19 +80,10 @@ $( ".hamburger" ).show();
 				?>
 				<p class="site-description"><?php echo $zion_church_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
-			<div id="site-navigation" class="navigation main-navigation">
-				<nav>
-					<?php
-						wp_nav_menu( array(
-							'theme_location' => 'menu-1',
-							'menu_id'        => 'primary-menu',
-							'menu_class'	 => 'navigation__items',
-						) );
-					?>
-				</nav><!-- #site-navigation -->
-			</div>
 			
 		</div><!-- .site-branding -->
+
+		
 		
 		<?php do_action('apply_header_images'); ?>
 
@@ -97,6 +92,7 @@ $( ".hamburger" ).show();
 			<img src="<?php // header_image(); ?>" height="<?php // echo get_custom_header()->height; ?>" width="<?php // echo get_custom_header()->width; ?>" alt="" />
 			</div>
 		</div> -->
+		
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
