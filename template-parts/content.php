@@ -9,21 +9,15 @@
 
 ?>
 
-<div class="contentNavigation">
-	<div class="contentNavigation__container">
-		<div id="site-navigation" class="navigation main-navigation contentNavigation__navigation">
-			<nav>
-				<?php
-					wp_nav_menu( array(
-						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
-						'menu_class'	 => 'navigation__items',
-					) );
-				?>
-			</nav><!-- #site-navigation -->
-		</div>
-	</div>
-</div>
+<nav id="site-navigation" class="main-navigation">
+	<?php
+	the_custom_logo();
+	wp_nav_menu( array(
+		'theme_location' => 'menu-1',
+		'menu_id'        => 'primary-menu',
+	) );
+	?>
+</nav><!-- #site-navigation -->
 
 
 
