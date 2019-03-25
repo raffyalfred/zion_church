@@ -2,12 +2,27 @@
 	
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	z-index: 9999;
 	transition: 0.4s;
+
+	#mega-menu-wrap-menu-1 {
+		@media screen and (max-width: 600px) {
+			width: 300px;
+		}
+
+		#mega-menu-menu-1 {
+			@media screen and (max-width: 600px){
+				padding: 20px;
+			}
+		}
+
+	}
+
 
 	ul {
 		display: none;
