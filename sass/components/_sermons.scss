@@ -9,7 +9,13 @@ $break-xl:      1200px;
     #wpfc_sermon_sorting {
         margin: 20px 0 20px 0;
         justify-content: center;
-    }
+
+        select {
+          height: 40px;
+          border-radius: 4px;
+        }
+
+    } // end wpfc_sermon_sorting
 
     .wpfc-sermon-image-img {
         background-size: 80%;
@@ -42,7 +48,7 @@ $break-xl:      1200px;
 
     article {
         max-width: 450px;
-        margin: 0 auto;
+        margin: 30px auto 0 auto;
         padding-bottom: 20px;
         padding-top: 20px;
         background-color: #334c5a;
