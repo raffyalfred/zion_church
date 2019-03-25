@@ -67,28 +67,29 @@ $break-xl:      1200px;
 	z-index: 99;
 	transform: translate(-50%, -50%);
 	left: 50%;
-	top: 40%;
+	top: 30%;
 	color: #eaeaea;
 	font-size: 1em;
 	transition: 0.2s;
 
-	@media screen and (max-width: $break-sm) {	
-		top: 20%;
+	@media screen and (max-width: $break-sm) {
+		top: 15%;
 		width: 100%;
 	}
 
 	@media screen and (min-width: $break-lg) {
 		font-size: 2em;
+		width: 100%;
 	}
-	
+
 
 	&__container {
 		text-align: center;
 		background-color: rgba(12, 46, 68, 0.6);
 		color: #f6f6f6;
 		padding: 30px;
-		max-width: 800px;
-		margin: 0 auto;	
+		width: 100%;
+		margin: 0 auto;
 	}
 
 	&__title {
@@ -96,6 +97,10 @@ $break-xl:      1200px;
 		text-align: center;
 		margin: 0;
 		display: block !important;
+
+		@media screen and (max-width: 600px){
+			font-size: 1.5em;
+		}
 
 	}
 
@@ -127,20 +132,26 @@ $break-xl:      1200px;
 		margin: 0 auto;
 		display: block;
 
+		@media screen and (max-width: 600px) {
+			height: 300px;
+		}
+
 		@media screen and (min-width: 1940px) {
 			max-width: 80%;
 			height: 800px;
 		}
+
 	}
+
 }
 
 
 .post {
 	margin: 0 auto;
+	color: white;
 
 	.contentPost {
 
-		max-width: 1200px;
 		margin: 0 auto;
 
 		@media screen and (min-width: $break-med) {
@@ -150,10 +161,14 @@ $break-xl:      1200px;
 		}
 
 		.post-noImage {
-			@media screen and (max-width: $break-sm){			
+			width: 100%;
+			@media screen and (max-width: $break-sm){
 				height: 250px;
-				width: 100%;
 			}
+			@media screen and (min-width: 600px){
+				height: 660px;
+			}
+
 		}
 
 		.weeklyEvents__Container {
@@ -162,7 +177,7 @@ $break-xl:      1200px;
 			flex-direction: column;
 			width: 100%;
 			margin: 20px
-			
+
 			h3 {
 				font-size: 28px;
 			}
@@ -207,7 +222,7 @@ $break-xl:      1200px;
 
 
 				.zion_event {
-					
+
 				}
 			}
 
@@ -218,17 +233,20 @@ $break-xl:      1200px;
 			padding: 20px;
 			box-shadow: 0 0 10px 4px rgba(145, 144, 144, 0.4);
 			background-color: #fff;
-			
+
 			ul {
 				font-size: 20px;
 			}
 
 			@media screen and (min-width: $break-med) {
 				margin-top: 5%;
+				max-width: 1200px;
+				margin-left: auto;
+				margin-right: auto;
 			}
 
 		}
-		
+
 		.weeklyEvents__Breakfast {
 			background-color: #232323;
 			color: whitesmoke;
@@ -236,7 +254,7 @@ $break-xl:      1200px;
 			-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 			box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 
-			
+
 			h2 {
 				border-bottom: 8px solid #fcb900;
 				font-size: 32px;
@@ -249,14 +267,14 @@ $break-xl:      1200px;
 			img {
 				width: 100%;
 				height: auto;
-	
+
 				@media screen and (min-width: $break-lg) {
 					width: 500px;
 					height: 350px;
 				}
 			}
 
-			
+
 			@media screen and (min-width: $break-med) {
 				h2 {
 					font-size: 32px;
@@ -266,11 +284,11 @@ $break-xl:      1200px;
 				}
 				grid-template-columns: auto 45% !important;
 			}
-			
+
 			.wp-block-media-text__content {
 				align-items: flex-start;
 			}
-			
+
 
 		}
 
@@ -279,21 +297,22 @@ $break-xl:      1200px;
 		}
 
 		.wp-block-latest-posts.has-dates.community__post {
-
-			@media screen and (max-width: $break-med) {
-				display: block;
-				list-style: none;
-
-				li {
-				}
-			}
-
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			list-style: none;
 			margin: 0;
 			grid-column-gap: 20px;
 			padding: 20px;
+			max-width: 1200px;
+			margin: auto;
+			@media and screen and (min-width: 600px){
+			}
+
+			@media screen and (max-width: $break-med) {
+				display: block;
+				list-style: none;
+			}
+
 
 			li {
 				background-color: cornsilk;
@@ -320,7 +339,7 @@ $break-xl:      1200px;
 
 
 	}
-	
+
 }
 
 
@@ -399,4 +418,3 @@ PROGRAMS PAGE
 
 
 }
-
