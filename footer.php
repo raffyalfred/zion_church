@@ -19,7 +19,7 @@
 
 			<!-- hidden until medium breakpoint -->
 			<div class="events">
-			
+
 				<h2 class="heading">Church Activities</h2>
 
 				<ul>
@@ -27,25 +27,25 @@
 						global $post;
 						$args = array( 'posts_per_page' => 4, 'category' => 3, 'order'=> 'DESC', 'orderby' => 'date' );
 						$rand_posts = get_posts( $args );
-						foreach ( $rand_posts as $post ) : 
+						foreach ( $rand_posts as $post ) :
 						setup_postdata( $post ); ?>
 						<div class="event-box">
-							<?php 
+							<?php
 								if (has_post_thumbnail() ) {
 
 									the_post_thumbnail('medium-large');
 								} else { ?>
 									<img src="<?php bloginfo('template_directory');?>/images/default-image.jpg" alt="<?php the_title();?>"/>
-								<?php } 
+								<?php }
 							?>
 							<li><h4><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4></li>
 							<span class="posts-readMore"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">Read More</a></span>
 
-							
+
 
 						</div>
-						
-					<?php endforeach; 
+
+					<?php endforeach;
 					wp_reset_postdata(); ?>
 				</ul>
 
@@ -56,7 +56,7 @@
 			</div>
 
 
-			
+
 			<div class="google-location">
 
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1674.4556870445806!2d-113.52915141001647!3d53.59278462666885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a023879369234b%3A0xd14e5a965f2e3e4d!2sZion+Baptist+Church+of+Kensington!5e0!3m2!1sen!2sca!4v1550160586150" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -64,13 +64,13 @@
 					<h2>Quick Links</h2>
 
 					<div class="footer-menu">
-						<?php wp_nav_menu( array( 
+						<?php wp_nav_menu( array(
 							'theme_location' => 'secondary',
 							'menu_class'	 => 'footer__items',
-							'menu_id'        => 'footer-items'  
+							'menu_id'        => 'footer-items'
 						) ); ?>
 					</div>
-					
+
 				</div>
 			</div>
 
@@ -83,14 +83,9 @@
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'zion_church' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'zion_church' ), 'WordPress' );
+				printf( esc_html__( 'Created by %s', 'zion_church' ), 'Koffee Labs' );
 				?>
 			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Created By: %1$s by %2$s.', 'zion_church' ), 'KofeeLabs', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
 		</div><!-- .site-info -->
 
 
