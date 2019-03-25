@@ -64,10 +64,10 @@ $( ".hamburger" ).show();
 		<img class="header__custom" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
 
 		<?php // do_action('apply_header_images'); ?>
-		
-		<div class="site-branding header__nav">
+
+		<div class="site-branding">
 			<?php
-			
+
 			if ( is_front_page() && is_home() ) :
 				?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -83,10 +83,10 @@ $( ".hamburger" ).show();
 				<p class="site-description"><?php echo $zion_church_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
-		
+
 		<?php do_action('apply_header_images'); ?>
 
-		
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
