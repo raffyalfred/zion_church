@@ -33,6 +33,8 @@ $pagecustomwidth: 1240px;
 	padding: 20px;
 }
 
+
+
 .ccontent {
 	background-color: $contentbgcolor;
 }
@@ -414,6 +416,18 @@ PROGRAMS PAGE
 
 		.custom-row-reverse {
 			flex-flow: row-reverse;
+		}
+
+		/*--------------------------------------------------------------
+EVENTS
+--------------------------------------------------------------*/
+
+		.event-program {
+			display: flex;
+		}
+
+		.event-program:nth-child(odd) {
+			flex-direction: row-reverse;
 		}
 
 

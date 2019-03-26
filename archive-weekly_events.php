@@ -20,23 +20,27 @@ get_header();
 		?>
 		<?php if ( $the_query->have_posts() ) : ?>
 			<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-				<h2><?php the_title(); ?></h2>
 				
-			<div class="entry-content">
-					<?php the_field('program_name'); ?>
-					<?php the_field('date'); ?>  	
-					<?php the_field('time'); ?> 
-					<?php the_field('description'); ?> 
-					<?php 
+				
+			<div class="entry-content pagecustomwidth event-program">
+				<div>
+					<div>
+						<h2><?php the_title(); ?></h2>
+						<?php the_field('program_name'); ?>
+						<?php the_field('date'); ?>  	
+						<?php the_field('time'); ?> 
+						<?php the_field('description'); ?> 
+					</div>
+					<div>
+						<?php 
 
-						$image = get_field('image');
+							$image = get_field('image');
 
-						if( !empty($image) ): ?>
-
-							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-
-						<?php endif; ?>
-						
+							if( !empty($image) ): ?>
+								<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+						<?php endif; ?>	
+					</div>
+				</div>
 			</div>
 				
 			<?php wp_reset_postdata(); ?>
