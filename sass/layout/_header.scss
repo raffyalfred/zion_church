@@ -2,7 +2,7 @@ $tablet: 600px;
 $desktop: 960px;
 $tabletQuoteWidth: 100%;
 $bodycolor: #fff;
-$customMobileHeader: 34vh;
+$customMobileHeader: 39vh;
 $center:            0 auto;
 $desktopQuoteFont: 1.5rem;
 
@@ -88,7 +88,7 @@ h1 {
 @media screen and (min-width: $desktop) {
 
     .widget_randombibleversewidget {
-        top: 40%;
+        top: 25%;
         font-size: $desktopQuoteFont;
         padding: 0px 150px 0px 150px;
     }
