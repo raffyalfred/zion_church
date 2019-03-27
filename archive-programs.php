@@ -15,7 +15,7 @@ get_header();
 
 		
 		<?php 
-				$args = array( 'post_type' => 'weekly_events', 'posts_per_page' => 10 );
+				$args = array( 'post_type' => 'programs', 'posts_per_page' => 10 );
 				$the_query = new WP_Query( $args ); 
 		?>
 		<?php if ( $the_query->have_posts() ) : ?>
@@ -24,22 +24,20 @@ get_header();
 				
 			<div class="entry-content pagecustomwidth event-program">
 				<div>
-					<div>
-						<h2><?php the_title(); ?></h2>
-						<?php the_field('event_name'); ?>
-						<?php the_field('date'); ?>  	
-						<?php the_field('time'); ?> 
-						<?php the_field('description'); ?> 
-					</div>
-					<div>
+                    <div>
 						<?php 
 
-							$image = get_field('image');
+							$image = get_field('thumbnail_image');
 
 							if( !empty($image) ): ?>
 								<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 						<?php endif; ?>	
+                    </div>
+					<div>
+						<h2><?php the_title(); ?></h2>
+						<p><?php the_field('program_detail'); ?></p>
 					</div>
+                    <div class="wp-block-button aligncenter is-style-outline custom-button"><a class="wp-block-button__link has-text-color has-luminous-vivid-amber-color" href="http://zion-a.web.dmitcapstone.ca/zion-church/programs/youth-programs"><span class="hover-animate">View Details</span><br></a></div>
 				</div>
 			</div>
 				

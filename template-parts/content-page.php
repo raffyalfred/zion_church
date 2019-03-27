@@ -20,7 +20,10 @@
 		</div> -->
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	
 	</header><!-- .entry-header -->
+	
+		<?php ?>
 
 	<?php zion_church_post_thumbnail(); ?>
 
@@ -35,6 +38,7 @@
 			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'zion_church' ),
 			'after'  => '</div>',
 		) );
+
 		?>
 	</div><!-- .entry-content -->
 

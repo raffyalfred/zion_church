@@ -307,8 +307,7 @@ $break-xl:      1200px;
 			padding: 20px;
 			max-width: 1200px;
 			margin: auto;
-			@media and screen and (min-width: 600px){
-			}
+			
 
 			@media screen and (max-width: $break-med) {
 				display: block;
@@ -401,6 +400,11 @@ PROGRAMS PAGE
 
 		.program-body-content {
 			display: flex;
+			justify-content: center;
+		}
+
+		.program-body-content:nth-child(even) {
+			flex-direction: row-reverse;
 		}
 
 		.custom-figure-width {
@@ -408,7 +412,7 @@ PROGRAMS PAGE
 		}
 
 		.custom-program-info {
-			width: 50%;
+			width: 30%;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
