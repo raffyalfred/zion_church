@@ -13,36 +13,37 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-		
-		<?php 
+
+		<?php
 				$args = array( 'post_type' => 'weekly_events', 'posts_per_page' => 10 );
-				$the_query = new WP_Query( $args ); 
+				$the_query = new WP_Query( $args );
 		?>
 		<?php if ( $the_query->have_posts() ) : ?>
 			<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-				
-				
-			<div class="entry-content pagecustomwidth event-program">
-				<div>
-					<div>
+
+
+			<div class="event-post">
+				<div class="event-post__container">
+					<div class="event-content">
 						<h2><?php the_title(); ?></h2>
-						<?php the_field('event_name'); ?>
-						<?php the_field('date'); ?>  	
-						<?php the_field('time'); ?> 
-						<?php the_field('description'); ?> 
+						<div class="event-dateTime">
+							<p class="date"><span>Date:</span> <?php the_field('date'); the_field('date_text'); ?></p>
+							<p class="time"><span>Time of Event:</span> <?php the_field('time'); the_field('time_text'); ?></p>
+						</div>
+						<p class="event-description"><?php the_field('description'); ?> </p>
 					</div>
-					<div>
-						<?php 
+					<div class="event-image">
+						<?php
 
 							$image = get_field('image');
 
 							if( !empty($image) ): ?>
 								<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-						<?php endif; ?>	
+						<?php endif; ?>
 					</div>
 				</div>
 			</div>
-				
+
 			<?php wp_reset_postdata(); ?>
 			<?php endwhile; ?>
 			<?php endif; ?>

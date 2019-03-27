@@ -435,4 +435,70 @@ EVENTS
 		}
 
 
+
+
+}
+
+
+/*--------------------------------------------------------------
+WEEKLY EVENTS POST
+--------------------------------------------------------------*/
+.event-post {
+	max-width: 1200px;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #1d3244;
+	color: whitesmoke;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+	p, span {
+		margin: 0;
+		padding: 0;
+	}
+	&__container {
+
+
+		.event-content {
+
+			h2 {
+				font-size: 2em;
+				margin: 20px 0;
+				text-align: center;
+			}
+
+			.event-description {
+				font-size: 1.2em;
+			}
+
+			.event-dateTime {
+				display: flex;
+				margin: 10px 0;
+				p {
+					font-size: 1.2em;
+					font-style: italic;
+				}
+				span {
+					font-weight: bold;
+				}
+				.date {
+
+				}
+				.time {
+					margin-left: 20px;
+				}
+
+			}
+
+
+		}
+
+		.event-image {
+			margin-top: 20px;
+		}
+
+	}
+
+
 }
