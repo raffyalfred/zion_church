@@ -27,15 +27,24 @@
 
 
 	<div class="entry-content ccontent pagecustom">
-	
-		<?php
-		the_content();
+    <?php
+        if ( is_singular() ) :
+            the_title( '<h1 class="entry-title postHeading__title">', '</h1>' );
+        else :
+            the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+        endif;
 
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'zion_church' ),
-			'after'  => '</div>',
-		) );
-		?>
+        if ( 'post' === get_post_type() ) :
+            ?>
+            <div class="entry-meta postHeading__postedBy">
+                <?php
+                zion_church_posted_on();
+                //TURNED OFF: posted by to hide. Uncomment to display back on
+                // zion_church_posted_by();
+                ?>
+            </div><!-- .entry-meta -->
+
+        <?php endif; ?>
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
