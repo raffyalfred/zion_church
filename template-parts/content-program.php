@@ -40,6 +40,7 @@
 						<?php endif; ?>
 					</div>
         <p><?php the_field('program_detail') ?></p>
+        <p><?php the_field('program_description') ?></p>
 
 
 	</div><!-- .entry-content -->

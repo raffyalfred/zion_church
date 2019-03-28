@@ -428,6 +428,14 @@ EVENTS
 
 		.event-program {
 			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+
+			&__info {
+				width: 50%;
+			}
+
+
 		}
 
 		.event-program:nth-child(odd) {
