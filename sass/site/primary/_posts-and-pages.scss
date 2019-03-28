@@ -307,7 +307,7 @@ $break-xl:      1200px;
 			padding: 20px;
 			max-width: 1200px;
 			margin: auto;
-			
+
 
 			@media screen and (max-width: $break-med) {
 				display: block;
@@ -452,32 +452,60 @@ WEEKLY EVENTS POST
 	-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 	box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	@media screen and (min-width: $break-med){
+		margin: 60px auto;
+	}
 
 	p, span {
-		margin: 0;
 		padding: 0;
 	}
+	p {
+		margin-bottom: 1em;
+	}
+	span {
+		color: burlywood;
+	}
 	&__container {
+		@media screen and (min-width: $break-med){
+			display: flex;
+			justify-content: center;
 
+		}
+		@media screen and (min-width: $break-lg){
+			.event-image img {
+
+			}
+		}
 
 		.event-content {
+
+			@media screen and (min-width: $break-med){
+				padding: 20px;
+				width: 100%;
+			}
 
 			h2 {
 				font-size: 2em;
 				margin: 20px 0;
 				text-align: center;
+				color: #fcb900;
+
+				@media screen and (min-width: $break-med){
+					text-align: left;
+				}
 			}
 
 			.event-description {
 				font-size: 1.2em;
+				margin-top: 10px;
 			}
 
 			.event-dateTime {
-				display: flex;
-				margin: 10px 0;
+
 				p {
 					font-size: 1.2em;
 					font-style: italic;
+					margin: 20px 0;
 				}
 				span {
 					font-weight: bold;
@@ -486,7 +514,7 @@ WEEKLY EVENTS POST
 
 				}
 				.time {
-					margin-left: 20px;
+
 				}
 
 			}
@@ -496,6 +524,12 @@ WEEKLY EVENTS POST
 
 		.event-image {
 			margin-top: 20px;
+			width: 100%;
+			img {
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+			}
 		}
 
 	}
