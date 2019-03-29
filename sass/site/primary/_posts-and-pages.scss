@@ -458,7 +458,6 @@ WEEKLY EVENTS POST
 .event-post {
 	max-width: 1200px;
 	margin: 20px auto;
-	padding: 20px;
 	background-color: #1d3244;
 	color: whitesmoke;
 	-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -478,22 +477,22 @@ WEEKLY EVENTS POST
 		color: burlywood;
 	}
 	&__container {
+		padding: 20px;
+
 		@media screen and (min-width: $break-med){
-			display: flex;
-			justify-content: center;
+			display: grid;
+		    grid-template-columns: 60% 40%;
+			padding: 0px;
 
-		}
-		@media screen and (min-width: $break-lg){
-			.event-image img {
-
-			}
 		}
 
 		.event-content {
 
 			@media screen and (min-width: $break-med){
 				padding: 20px;
-				width: 100%;
+				align-self: center;
+				justify-self: center;
+				width: 80%;
 			}
 
 			h2 {
@@ -509,6 +508,9 @@ WEEKLY EVENTS POST
 
 			.event-description {
 				font-size: 1.2em;
+				@media screen and (min-width: $break-med){
+					font-size: 1.5em
+				}
 				margin-top: 10px;
 			}
 
@@ -535,12 +537,12 @@ WEEKLY EVENTS POST
 		}
 
 		.event-image {
-			margin-top: 20px;
+			height: 100%;
 			width: 100%;
 			img {
-				margin-left: auto;
-				margin-right: auto;
 				display: block;
+			    height: 100%;
+			    width: 100%;
 			}
 		}
 
