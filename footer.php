@@ -25,7 +25,7 @@
 				<ul>
 					<?php
 						global $post;
-						$args = array( 'posts_per_page' => 4, 'category' => 3, 'order'=> 'DESC', 'orderby' => 'date' );
+						$args = array( 'post_type' => 'community_notice', 'posts_per_page' => 4 );
 						$rand_posts = get_posts( $args );
 						foreach ( $rand_posts as $post ) :
 						setup_postdata( $post ); ?>

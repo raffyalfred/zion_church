@@ -1,0 +1,38 @@
+.communityNotice {
+    max-width: 1200px;
+    padding: 20px;
+
+    h2 {
+        color: #fcb900 !important;
+    }
+    @media screen and (min-width: $break-smallish){
+        margin: 0 auto;
+
+        h2 {
+            font-size: 2em;
+        }
+
+        &__wrap {
+        	display: grid;
+        	grid-template-columns: 1fr 1fr;
+        	justify-items: center;
+
+            p {
+                color: white !important;
+                font-size: 1.2em;
+            }
+        }
+        &__content {
+            align-self: center;
+            justify-self: center;
+        }
+        &__image {
+        	width: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+    } //end media min-width
+} //end communityNotice

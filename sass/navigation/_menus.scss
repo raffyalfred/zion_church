@@ -1,5 +1,5 @@
 .main-navigation {
-	
+
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -120,15 +120,17 @@
 	.nav-previous {
 		float: left;
 		width: 50%;
+		@media screen and (min-width: 650px){
+			width: 30%;
+		}
 	}
 
 	.nav-next {
 		float: right;
 		text-align: right;
 		width: 50%;
+		@media screen and (min-width: 650px){
+			width: 30%;
+		}
 	}
 }
-
-
-
-
