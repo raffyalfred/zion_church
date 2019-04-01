@@ -22,3 +22,13 @@ $pgrmHeadingColor: #fff;
 h3 {
 	color: $pgrmHeadingColor;
 }
+
+.heading-secondary {
+	font-size: 30px;
+	margin-top: 0;
+	margin-bottom: 1rem;
+
+	@media (min-width: 568px) {
+		font-size: 40px;
+	}
+}
