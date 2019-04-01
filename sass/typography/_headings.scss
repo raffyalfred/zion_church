@@ -9,6 +9,9 @@ h1, h2, h3, h4, h5, h6 {
 
 $pgrmHeadingColor: #fff;
 
+
+
+
 .postHeading {
 	&__title {
 		font-size: 3em;
@@ -21,4 +24,14 @@ $pgrmHeadingColor: #fff;
 
 h3 {
 	color: $pgrmHeadingColor;
+}
+
+.heading-secondary {
+	font-size: 30px;
+	margin-top: 0;
+	margin-bottom: 1rem;
+
+	@media (min-width: 568px) {
+		font-size: 40px;
+	}
 }
