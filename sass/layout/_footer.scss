@@ -174,8 +174,11 @@ $center:            0 auto;
 
 
             @media screen and (min-width: $break-medium) {
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 2fr 1fr;
                 justify-items: center;
+                iframe {
+                    width: 100%;
+                }
             }
 
 
@@ -235,15 +238,25 @@ $center:            0 auto;
                             display: none;
                         }
 
+                        @media screen and (max-width: $break-sm){
+                            font-size: 1.2em;
+                        }
                         @media screen and (min-width: $break-smallish){
                             text-align: center;
                             font-size: 1.2em;
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            grid-gap: 10px;
+                            width: 50%;                            
+                            margin: 0 auto;
                         }
-
                         @media screen and (min-width: $break-medium){
                             text-align: left;
                             display: grid;
                             grid-template-columns: 1fr;
+                            grid-gap: 0;
+                            margin-bottom: 0;
+                            width: 100%;
                         }
 
                         @media screen and (min-width: $break-large) {
