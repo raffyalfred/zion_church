@@ -18,6 +18,38 @@ h1 {
         text-align: center;
         top: 14%;
         padding: 0px 10px 0px 10px;
+
+        // END OF PARENT CONTAINER
+        .dailyVerses.bibleText{
+            background-color: rgba(29, 29, 29, 0.88);
+            border-radius: 5px;
+            padding: 10px;
+            border-left: groove 8px #dbb878;
+        }
+        // END OF .dailyVerses CONTAINER
+
+        @media screen and (min-width: $break-medium){
+
+            .dailyVerses.bibleText {
+            	font-size: 1.3em;
+            	padding: 20px;
+                border-left-width: 20px;
+            }
+
+        } // END BREAK MEDIUM
+
+
+        @media screen and (min-width: $break-large){
+
+            .dailyVerses.bibleText {
+            	padding: 60px;
+            }
+
+        } // END BREAK LARGE
+
+
+
+
 }
 
 .header {
@@ -27,7 +59,7 @@ h1 {
     &__nav {
         position: absolute;
         z-index: 100;
-        width: 100%; 
+        width: 100%;
         background: rgba(0, 0, 255, 0.137);
         display: flex;
         justify-content: space-between;
@@ -73,7 +105,7 @@ h1 {
 }
 
 @media screen and (min-width: $tablet) {
-    
+
     .header {
         &__custom {
             height: auto;
