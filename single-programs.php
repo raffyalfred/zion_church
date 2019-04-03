@@ -10,6 +10,8 @@ get_header();
 
 $image = get_field('thumbnail_image')['url'];
 $file_form = get_field('youth_release_form')['url'];
+$date = get_field('program_date');
+$time = get_field('program_time');
 ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
@@ -24,9 +26,18 @@ $file_form = get_field('youth_release_form')['url'];
 
 				<div class="program__datetime">
 					<p class="heading-secondary"><?php the_field('program_name'); ?></p>
-					<p class="program__date">Date: <?php the_field('program_date'); ?></p>
+					<?php
+					if( !empty($date) ): ?>
+					<p class="program__date">Date: <?php echo the_field('program_date'); ?></p>
+					<?php endif; ?>
+					<?php
+					if( !empty($time) ): ?>
 					<p class="program__time">Time: <?php the_field('program_time'); ?></p>
+					<?php endif; ?>
+					<?php
+					if( !empty($file_form) ): ?>
 					<p class="program__files">Form: <a href="<?php echo $file_form; ?>" class="program__files-download">Download</a> </p>
+					<?php endif; ?>
 				</div>
 
 				<div class="program__content">
