@@ -4,6 +4,7 @@ $break-medium:      768px;
 $break-large:       992px;
 $break-xl:          1200px;
 $center:            0 auto;
+$linkcolor: #fff;
 
 .footer {
 
@@ -283,13 +284,18 @@ $center:            0 auto;
         text-align: center;
     } // end view-more
 
+    .site-info a {
+        color: $linkcolor;
+    }
+
     .site-info  {
       display: flex;
       flex-direction: column;
       background-color: #292929;
-      color: white;
+      color: $linkcolor;
       padding: 10px;
       margin-top: 30px;
+
 
       @media screen and (min-width: $break-smallish){
         flex-direction: row;

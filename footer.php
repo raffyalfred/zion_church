@@ -80,7 +80,7 @@
 
 
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'zion_church' ) ); ?>">
+			<a href="<?php echo esc_url( __( 'https://kofee.therayg.com/', 'zion_church' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
 				printf( esc_html__( 'Created by %s', 'zion_church' ), 'Koffee Labs' );

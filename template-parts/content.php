@@ -25,7 +25,6 @@
 
 	<header class="entry-header postHeading">
 
-		
 		<div class="postHeading__container">
 			
 			<?php

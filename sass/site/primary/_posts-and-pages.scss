@@ -7,19 +7,18 @@ $pagecustomwidth: 1240px;
 	display: block;
 }
 
-// .post,
-// .page {
-// 	margin: 0 0 1.5em;
-// }
 
 .updated:not(.published) {
 	display: none;
 }
 
 .page-content,
-.entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
+}
+
+.entry-content {
+	margin-top: -0.4rem;
 }
 
 .page-links {
@@ -38,10 +37,6 @@ $pagecustomwidth: 1240px;
 .ccontent {
 	background-color: $contentbgcolor;
 }
-
-// .post .entry-utility {
-// 	display: none;
-// }
 
 
 
@@ -109,8 +104,6 @@ $break-xl:      1200px;
 	&__postedBy {
 		display: none;
 	}
-
-
 
 }
 
