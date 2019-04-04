@@ -36,3 +36,38 @@
 
     } //end media min-width
 } //end communityNotice
+
+
+//=========================================================================
+//------------------- template parts - community_notice -------------------
+//=========================================================================
+.communityArchive{ // FOUND IN archive-community_notice.php
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.communityPost {
+
+    &__container {
+
+        display: grid;
+        align-items: center;
+        padding: 10px;
+        background-color: #515151;
+        border-left: 10px groove #fcb900;
+
+        margin: 10px auto;
+
+        @media screen and (min-width: 600px){
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            width: 500px;
+        } //END break 600px
+
+
+    } // END OF container
+
+
+
+} // END OF .event-post
