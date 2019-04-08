@@ -8,8 +8,7 @@ h1, h2, h3, h4, h5, h6 {
 ///////////////////////////////////////
 
 $pgrmHeadingColor: #fff;
-
-
+$pgrmName: #fcb900;
 
 
 .postHeading {
@@ -30,6 +29,7 @@ h3 {
 	font-size: 30px;
 	margin-top: 0;
 	margin-bottom: 1rem;
+	color: $pgrmName;
 
 	@media (min-width: 568px) {
 		font-size: 40px;

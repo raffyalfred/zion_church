@@ -1,0 +1,9 @@
+$border: 1px solid #b59225;
+$contact-card-padding: 2.25rem;
+$border-radius: 10px;
+
+#wpforms-892 {
+    border: $border;
+    padding: $contact-card-padding;
+    border-radius: $border-radius;
+}

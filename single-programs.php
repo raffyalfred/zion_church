@@ -25,7 +25,7 @@ $time = get_field('program_time');
 				</div>
 
 				<div class="program__datetime">
-					<p class="heading-secondary"><?php the_field('program_name'); ?></p>
+					<h3 class="heading-secondary"><?php the_field('program_name'); ?></h3>
 					<?php
 					if( !empty($date) ): ?>
 					<p class="program__date">Date: <?php echo the_field('program_date'); ?></p>
@@ -41,7 +41,7 @@ $time = get_field('program_time');
 				</div>
 
 				<div class="program__content">
-					<p class="program__content-description">Description:<br><?php the_field('program_description'); ?></p>
+					<h3 class="program__content-description">Description:</h3><p><?php the_field('program_description'); ?></p>
 				</div>
 			<?php endwhile; // End of the loop. ?>
 			</div>
