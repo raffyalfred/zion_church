@@ -146,3 +146,57 @@ $break-xl:      1200px;
 
 
 }
+
+.sermon {
+    
+    padding: 40px;
+
+    &__container {
+        
+        padding: 20px;
+        background-color: burlywood;
+
+
+        .sermon__heading {
+
+            h2 {
+                letter-spacing: 2px;
+                font-style: italic;
+            }
+            .subtext {
+                font-size: 1.5em;
+            }
+
+        }
+
+        .sermon__imageContainer {
+            width: 100%;
+            
+        }
+
+    }
+
+    @media screen and (min-width: $break-sm){
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        &__container {
+
+            margin: 0 auto;
+            width: 550px;
+            box-shadow: 0px 0px 15px 5px #636363;
+
+
+            .sermon__heading {
+
+
+
+            }
+
+        }
+
+    }
+
+}
