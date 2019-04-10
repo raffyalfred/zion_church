@@ -1,0 +1,7 @@
+{
+    "host": "zion-a.web.dmitcapstone.ca",
+    "port": 21, 
+    "username": "zion-a",
+    "password": "P@ssword321",
+    "rootDirectory": "/public_html/zion-church/wp-content/themes/zion_church/"
+}
