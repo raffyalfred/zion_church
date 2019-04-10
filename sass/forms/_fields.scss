@@ -31,3 +31,8 @@ select {
 textarea {
 	width: 100%;
 }
+
+.wpcf7 input[name="your-name"],
+.wpcf7 input[type="email"] {
+	width: 100%;
+}
