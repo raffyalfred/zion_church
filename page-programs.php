@@ -29,7 +29,7 @@ get_header();
 						<?php the_field('program_name'); ?>
 						<?php the_field('date'); ?>  	
 						<?php the_field('time'); ?> 
-						<?php the_field('description'); ?> 
+						<?php nl2br(the_field('description')); ?> 
 					</div>
 					<div>
 						<?php 
