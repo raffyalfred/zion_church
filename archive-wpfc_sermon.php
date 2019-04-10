@@ -13,33 +13,33 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main sermonContainer">
 
-		<?php if ( have_posts() ) : ?>
+			<?php if(have_posts()): ?>
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+				<?php while(have_posts()): ?>
+					<?php  
+						the_post();
+						the_content();
+					?>
+				<?php endwhile; ?>
 
-				the_content();
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
+				<?php else: ?>
+					<div class="sermon">
+						<div class="sermon__container">
+							<div class="sermon__heading">
+								<h2>We are currently in the process of transferring our sermons to our new site.</h2>
+								<p class="subtext">Check back soon!</p>
+							</div>
+							<div class="sermon__imageContainer">
+								<img src="<?php bloginfo('template_directory');?>/images/default-image.jpg" alt="<?php the_title();?>"/>
+							</div>
+						</div>
+					</div>
 
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-			echo "COming Soon";
-			// get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
+			<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
 
 <?php
 get_sidebar();
