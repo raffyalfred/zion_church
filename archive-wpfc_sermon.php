@@ -29,6 +29,7 @@ get_header();
 								<h2>We are currently in the process of transferring our sermons to our new site.</h2>
 								<p class="subtext">Check back soon!</p>
 							</div>
+							
 							<div class="sermon__imageContainer">
 								<img src="<?php bloginfo('template_directory');?>/images/default-image.jpg" alt="<?php the_title();?>"/>
 							</div>
