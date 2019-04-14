@@ -147,6 +147,79 @@ $break-xl:      1200px;
 
 }
 
+.sermonContainer {
+    
+    @media screen and (min-width: 600px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    article {
+        padding: 20px;
+
+        .wpfc-sermon-inner {
+            background: #eee;
+            margin-top: 2em;
+            padding: 20px;
+            width: 90%;
+            margin: auto;
+            border: none;
+            border-radius: 5px;
+
+            @media screen and (min-width: 600px){
+                width: 100%;   
+            }
+
+            .wpfc-sermon-main {
+                color: black;
+
+
+                .wpfc-sermon-header {
+                    
+                    .wpfc-sermon-title {
+                        font-size: 1.5em;
+
+                        a.wpfc-sermon-title-text {
+                            color: #383838;
+                            text-decoration: underline;
+                        }
+                        a.wpfc-sermon-title-text:hover {
+                            color: red;
+                        }
+                    }
+
+                }
+
+                .sermon-description-content {
+                    font-size: 18px;
+                }
+            }
+
+            .wpfc-sermon-image {
+                height: auto;
+                position: relative;
+                width: 250px;
+                margin: 0 auto;
+
+
+                .wpfc-sermon-image-img {
+                    padding-top: 100%;
+                }
+
+                @media screen and (min-width: 600px) {
+                    .wpfc-sermon-image-img {
+                        padding-top: 70%;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
 .sermon {
     
     padding: 40px;
@@ -154,8 +227,7 @@ $break-xl:      1200px;
     &__container {
         
         padding: 20px;
-        background-color: burlywood;
-
+        background-color: #344a5f;
 
         .sermon__heading {
 
