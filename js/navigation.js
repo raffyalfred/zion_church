@@ -31,12 +31,13 @@ $(document).ready(function() {
     	scroll_pos = $(this).scrollTop();
     	if (scroll_pos > 100) {
     		$(".main-navigation").css('background-color', '#fcb900');
-    		$(".main-navigation").css('height', '70px');
+    		$(".main-navigation").css('height', '60px');
     		$(".main-navigation").css('padding', '20px');
     	} else {
     		$(".main-navigation").css('background-color', 'rgba(255, 255, 255, 0)');
     		$(".main-navigation").css('height', 'auto');
     		$(".main-navigation").css('padding', '10px');
+            $
     	}
     });
 
