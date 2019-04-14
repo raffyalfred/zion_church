@@ -8,8 +8,6 @@
  */
 
 ?>
-
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	
@@ -19,7 +17,7 @@
 
 
 
-	<div class="entry-content ccontent pagecustom">
+	<div class="entry-content ccontent pagecustom contact_us">
 	
 		<?php
 		the_content();
@@ -55,4 +53,3 @@
 		</footer><!-- .entry-footer -->
 	<?php endif; ?>
 </article><!-- #post-<?php the_ID(); ?> -->
-<!-- danne -->

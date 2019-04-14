@@ -16,24 +16,61 @@ h1 {
         position: absolute;
         color: rgba(255, 255, 255, 0.925);
         text-align: center;
-        top: 14%;
-        padding: 0px 10px 0px 10px;
+        top: 10%;
+        padding: 0px 20px 0px 20px;
+        width: 100%;
 
         // END OF PARENT CONTAINER
         .dailyVerses.bibleText{
-            background-color: rgba(29, 29, 29, 0.88);
+            background-color: rgba(221, 221, 221, 0.96);
             border-radius: 5px;
-            padding: 10px;
             border-left: groove 8px #dbb878;
+            height: 100px;
+            overflow-y: hidden;
+            color: #555;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .dailyVerses.bibleVerse {
+            width: 250px;
+            background-color: rgb(181, 145, 46);
+            margin: 0 auto;
+            padding: 5px;
+            border-radius: 3px;
+
+            a {
+                color: #ccc;
+            }
+            a:hover {
+                color: #9c8b5d;
+            }
+
+            @media screen and (min-width: 650px) {
+                margin: -20px auto auto;
+            }
+
+
         }
         // END OF .dailyVerses CONTAINER
 
-        @media screen and (min-width: $break-medium){
+        @media screen and (min-width: $tablet){
+
+            top: 14%;
+
+            .widget_randombibleversewidget {
+                top: 15%;
+                padding: 0px 40px 0px 40px;
+            }
 
             .dailyVerses.bibleText {
             	font-size: 1.3em;
             	padding: 20px;
                 border-left-width: 20px;
+                height: 160px
             }
 
         } // END BREAK MEDIUM
@@ -41,13 +78,9 @@ h1 {
 
         @media screen and (min-width: $break-large){
 
-            .dailyVerses.bibleText {
-            	padding: 60px;
-            }
+
 
         } // END BREAK LARGE
-
-
 
 
 }
@@ -120,8 +153,16 @@ h1 {
 @media screen and (min-width: $desktop) {
 
     .widget_randombibleversewidget {
-        top: 25%;
-        font-size: $desktopQuoteFont;
-        padding: 0px 150px 0px 150px;
+        top: 20%;
+        font-size: 1.2rem;
+        padding: 0px 70px 0px 70px;
     }
+}
+
+@media screen and (min-width: 1400px) {
+
+    .widget_randombibleversewidget {
+        font-size: 1.5rem;
+    }
+
 }
