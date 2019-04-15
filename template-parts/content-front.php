@@ -25,13 +25,13 @@
 	<?php zion_church_post_thumbnail(); ?>
 
 	<div class="entry-content ccontent pagecustom">
-        <a href="http://zion-a.web.dmitcapstone.ca/zion-church/about"><div class="wp-block-cover has-background-dim has-parallax ccontent_section" style="background-image:url(http://zion-a.web.dmitcapstone.ca/zion-church/wp-content/uploads/2019/03/about-hero-lg-1024x682.jpg)"><h3 class="wp-block-cover-text">ABOUT<br></h3></div></a>
+        <a href="http://zion-a.web.dmitcapstone.ca/zion-church/about"><div class="wp-block-cover has-background-dim has-parallax ccontent_section bg_hover" style="background-image:url(http://zion-a.web.dmitcapstone.ca/zion-church/wp-content/uploads/2019/03/about-hero-lg-1024x682.jpg)"><h3 class="wp-block-cover-text">ABOUT<br></h3></div></a>
 
-        <a href="http://zion-a.web.dmitcapstone.ca/zion-church/programs"><div class="wp-block-cover has-background-dim has-parallax" style="background-image:url(http://zion-a.web.dmitcapstone.ca/zion-church/wp-content/uploads/2019/03/programs-hero-lg.jpg)"><h3 class="wp-block-cover-text">PROGRAMS<br></h3></div></a>
+        <a href="http://zion-a.web.dmitcapstone.ca/zion-church/programs"><div class="wp-block-cover has-background-dim has-parallax bg_hover" style="background-image:url(http://zion-a.web.dmitcapstone.ca/zion-church/wp-content/uploads/2019/03/programs-hero-lg.jpg)"><h3 class="wp-block-cover-text">PROGRAMS<br></h3></div></a>
 
-        <a href="http://zion-a.web.dmitcapstone.ca/zion-church/sermons"><div class="wp-block-cover has-background-dim has-parallax" style="background-image:url(http://zion-a.web.dmitcapstone.ca/zion-church/wp-content/uploads/2019/03/sermons-hero-lg.jpg)"><h3 class="wp-block-cover-text">SERMON</h3></div></a>
+        <a href="http://zion-a.web.dmitcapstone.ca/zion-church/sermons"><div class="wp-block-cover has-background-dim has-parallax bg_hover" style="background-image:url(http://zion-a.web.dmitcapstone.ca/zion-church/wp-content/uploads/2019/03/sermons-hero-lg.jpg)"><h3 class="wp-block-cover-text">SERMON</h3></div></a>
 
-        <a href="http://zion-a.web.dmitcapstone.ca/zion-church/contact-us"><div class="wp-block-cover has-background-dim has-parallax" style="background-image:url(http://zion-a.web.dmitcapstone.ca/zion-church/wp-content/uploads/2019/03/contact-hero-lg.jpg)"><h3 class="wp-block-cover-text">CONTACT US</h3></div></a>
+        <a href="http://zion-a.web.dmitcapstone.ca/zion-church/contact-us"><div class="wp-block-cover has-background-dim has-parallax bg_hover" style="background-image:url(http://zion-a.web.dmitcapstone.ca/zion-church/wp-content/uploads/2019/03/contact-hero-lg.jpg)"><h3 class="wp-block-cover-text">CONTACT US</h3></div></a>
 
 	</div><!-- .entry-content -->
 
