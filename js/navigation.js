@@ -33,11 +33,12 @@ $(document).ready(function() {
     		$(".main-navigation").css('background-color', '#fcb900');
     		$(".main-navigation").css('height', '60px');
     		$(".main-navigation").css('padding', '20px');
+            $(".custom-logo").css('width', '60px');
     	} else {
     		$(".main-navigation").css('background-color', 'rgba(255, 255, 255, 0)');
     		$(".main-navigation").css('height', 'auto');
     		$(".main-navigation").css('padding', '10px');
-            $
+            $(".custom-logo").css('width', '120px');
     	}
     });
 
