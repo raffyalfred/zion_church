@@ -52,7 +52,7 @@
 			</div>
 
 			<div class="view-more">
-				<a href="http://zion-a.web.dmitcapstone.ca/zion-church/community-notices/" class="button2">View More</a>
+				<a href="http://zion-a.web.dmitcapstone.ca/zion-church/community_notice/" class="button2">View More</a>
 			</div>
 
 

@@ -71,3 +71,76 @@
 
 
 } // END OF .event-post
+
+
+.massTimes {
+    
+    p {
+        font-size: 18px;
+        color: #e4e4e4;
+    }
+
+    @media screen and (min-width: 550px) {
+        width: 500px;
+    }
+    @media screen and (min-width: 768px ) {
+        width: 768px;
+    }
+    @media screen and (min-width: 1000px) {
+        width: 1000px;
+    }
+
+    &__container {
+        
+        @media screen and (min-width: 550px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .massTimes__wrap {
+
+            margin: 2em 0;
+
+            @media screen and (min-width: 550px) {
+                width: 45%;
+                margin: 0;
+                background-color: #354e67;
+                margin: 10px;
+                padding: 20px;
+                border-radius: 10px;
+            }
+            @media screen and (min-width: 1000px) {
+                width: 30%;
+            }
+
+
+            .massTimes__day {
+                border-bottom: 2px solid snow;
+                width: 7em;
+                font-size: 1.5em;
+            }
+
+
+            .massTImes__event-wrap {
+                border-left: 5px groove #fcb900;
+                padding-left: 10px;
+                margin-left: 2em;
+
+
+                .massTimes__time {
+                    color: darkkhaki !important;
+                    letter-spacing: 2px;
+                    font-weight: bold;
+                }
+
+
+            } // EEND OF .event-wrap
+
+            
+        } // END OF .wrap
+
+    } // END OF .container
+
+
+} // END OF .massTimes

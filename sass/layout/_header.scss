@@ -25,9 +25,10 @@ h1 {
             background-color: rgba(221, 221, 221, 0.96);
             border-radius: 5px;
             border-left: groove 8px #dbb878;
-            height: 100px;
-            overflow-y: hidden;
+            max-height: 100px;
+            overflow-y: scroll;
             color: #555;
+            padding: 20px;
 
             display: flex;
             align-items: center;
@@ -50,7 +51,7 @@ h1 {
             }
 
             @media screen and (min-width: 650px) {
-                margin: -20px auto auto;
+                margin: 0 auto auto;
             }
 
 
@@ -59,18 +60,16 @@ h1 {
 
         @media screen and (min-width: $tablet){
 
-            top: 14%;
+            top: 15%;
 
             .widget_randombibleversewidget {
-                top: 15%;
                 padding: 0px 40px 0px 40px;
             }
 
             .dailyVerses.bibleText {
             	font-size: 1.3em;
-            	padding: 20px;
                 border-left-width: 20px;
-                height: 160px
+                max-height: 160px;
             }
 
         } // END BREAK MEDIUM
@@ -141,7 +140,7 @@ h1 {
 
     .header {
         &__custom {
-            height: auto;
+            height: 55vh;
         }
     }
 
@@ -156,6 +155,12 @@ h1 {
         top: 20%;
         font-size: 1.2rem;
         padding: 0px 70px 0px 70px;
+    }
+
+    .header {
+        &__custom {
+            height: 75vh;
+        }
     }
 }
 
